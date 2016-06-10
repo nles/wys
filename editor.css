@@ -1,0 +1,124 @@
+#wys-embedded-editor {
+  border: none; width: 100%; height: 100%;
+}
+
+#wys-editor-container {
+  position: fixed;
+  top: 0; right: 0;
+  width: 0;
+  z-index: 99999980;
+}
+
+#wys-editor-trigger {
+  float: right;
+  position: absolute;
+  top: 0; right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #007bff transparent transparent;
+  opacity: 0.5;
+  z-index: 99999982;
+}
+
+#wys-editor-toolbar {
+  float: right;
+  position: absolute;
+  top: 0; right: 0;
+  width: 0;
+  background: #fff;
+  overflow: hidden;
+  z-index: 99999981;
+
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+}
+
+#wys-editor-toolbar .editor-actions {
+  padding: 10px 0 0 0;
+  width: 22px;
+  margin: 0 auto;
+}
+
+#wys-editor-toolbar a {
+  margin: 8px 0 ;
+  display: block;
+}
+
+#wys-editor-toolbar a i {
+  font-size: 22px;
+}
+
+#wys-editor-toolbar hr {
+  margin: 15px 0 5px 0;
+}
+
+#wys-cms-shortcuts-wrapper {
+  position: absolute;
+  top: 0; left: 0;
+  border-color: #ddd;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  padding: 0 10px;
+}
+
+#wys-cms-shortcuts-wrapper a {
+  white-space: nowrap;
+}
+
+.editable.edit-mode-on {
+  outline: 2px dashed #ddd;
+}
+
+.editable.inline,
+.editable.inline:focus {
+  display: inline-block;
+}
+
+.wys-quick-edit-area-example {
+  outline: 2px dashed #ddd;
+}
+
+.wys-quick-edit-area-example .editor {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.popover.tour { max-width: 450px; }
+
+
+.loader-wrapper .loading {
+  width: 160px;
+  height: 50px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.loader-wrapper .error,
+.loader-wrapper .success {
+  display: none;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.loader-wrapper .error { color: #a30000; }
+.loader-wrapper .success { color: #00a31b; }
+
+.loader-text {
+  float: left;
+  margin-top: 7px;
+}
+
+/* customize vex */
+.vex.cms-in-modal.vex-theme-top .vex-content { width: 90%; height: 90%; }
+.vex.cms-in-modal.vex-theme-top .vex-dialog-form,
+.vex.cms-in-modal.vex-theme-top .vex-dialog-input { height: 100%; }
+.vex .vex-dialog-buttons { display: none; }
+
+.vex.xhr-loader.vex-theme-top .vex-content { width: 350px; padding: 0.5em; }
+.vex.xhr-loader.vex-theme-top .vex-dialog-input { margin-bottom: 0; }
+
