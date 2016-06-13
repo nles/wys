@@ -1,0 +1,46 @@
+{
+  "tooltips": {
+    "dashboard": "Dashboard",
+    "editor": "Open editor",
+    "quick-editor": "Quick edit mode",
+    "logout": "Log out",
+    "tour": "Tour",
+    "save-changes": "Save changes"
+  },
+  "tour": {
+    "previous":"Previous",
+    "next":"Next",
+    "close":"Close tour",
+
+    "first-step-title":"Tour of the editor layout",
+    "first-step-content":"Welcome to the WYS editor overlay. This tour will show you how to access the available editor features.",
+
+    "open-toolbar-title": "Opening the toolbar",
+    "open-toolbar-content": "You can view the editor toolbar by hovering over this icon anywhere on your site.",
+
+    "cms-dashboard-title": "Content editor",
+    "cms-dashboard-content": "You can open the dashboard of the content editor to access all it's features by clicking this button.",
+
+    "cms-editor-title": "Open page editor",
+    "cms-editor-content": "Click this button to open the edit view of the <strong>currently active</strong> page.",
+
+    "quick-editor-title": "Quick edit mode",
+    "quick-editor-content": "Click this button to activate the quick edit mode. More details about the quick edit mode next.",
+
+    "quick-editor-explanation-title": "Quick edit fields",
+    "quick-editor-explanation-content": "In the quick edit mode, you can edit all visible content that gets surrounded with a dashed line like this:",
+
+    "quick-editor-usage-title": "Formatting content in the quick edit mode",
+    "quick-editor-usage-content": "You can format the content in quick edit mode by selecting the content you want to format, and using the tools that show up in the hover toolbar above. You can try it freely below.",
+    "quick-editor-usage-highlight": "select this text",
+
+    "shortcuts-title": "Shortcuts",
+    "shortcuts-content": "Hovering this button shows the list of available shortcuts to access the commonly used features of the content editor.",
+
+    "logout-title": "Log out",
+    "logout-content": "Log out from the editor by clicking this button.",
+
+    "tour-restart-title": "Replay this tour",
+    "tour-restart-content": "If you want to revisit this tour, click this button."
+  }
+}

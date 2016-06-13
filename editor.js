@@ -6,7 +6,7 @@ var hoveringWysTrigger = false;
 var hoveringWysToolbar = false;
 var hoveringWysShortcuts = false;
 var animatingWysToolbar = false;
-var wysToolbarWidth = 38;
+var wysToolbarWidth = 58;// 38px toolbar + 20px "padding"
 var allowWysToolbarHide = true;
 
 var openWysToolbar = function(){
@@ -45,13 +45,21 @@ var initWysToolbar = function(){
   var wysCmsShortcuts = wysCmsShortcutsWrapper.add(wysCmsShortcutsTrigger)
 
   var showWysCmsShortcutMenu = function(){
-    wysCmsShortcutsWrapper.css("left",(wysCmsShortcutsWrapper.outerWidth()*-1)+1);
+    wysCmsShortcutsWrapper.css("left",(wysCmsShortcutsWrapper.outerWidth()*-1)+20);
     wysCmsShortcutsWrapper.css("top",wysCmsShortcutsTrigger.position().top);
     wysCmsShortcutsWrapper.show();
   }
   var hideWysCmsShortcutMenu = function(){
     wysCmsShortcutsWrapper.hide();
   }
+
+  // tooltip translations
+  wysToolbar.find("#wys-cms-dashboard").attr('data-hint',i18next.t('tooltips.dashboard'));
+  wysToolbar.find("#wys-open-editor").attr('data-hint',i18next.t('tooltips.editor'));
+  wysToolbar.find("#wys-enable-quick-edit-mode").attr('data-hint',i18next.t('tooltips.quick-editor'));
+  wysToolbar.find("#wys-cms-logout").attr('data-hint',i18next.t('tooltips.logout'));
+  wysToolbar.find("#wys-cms-tour").attr('data-hint',i18next.t('tooltips.tour'));
+  wysToolbar.find("#wys-save-quick-mode-changes").attr('data-hint',i18next.t('tooltips.save-changes'));
 
   // events
   wysTrigger.on('mousemove',function(){ hoveringWysTrigger = true; });
@@ -264,10 +272,15 @@ $(window).bind('keydown', function(event) {
 
 // INIT ALL COMPONENTS
 var wysContainer, wysTrigger, wysToolbar
-$(function(){
+// call after dom & translations ready
+var wysMainSetup = function(){
+  // setup tour
+  setupWysTour();
+  // elements
   wysContainer = $("<div id='wys-editor-container' />")
   wysTrigger = $("<div id='wys-editor-trigger' />")
   wysToolbar = $("<div id='wys-editor-toolbar' />")
+  // get the main template and init everything
   $.get(wys_cms_path+'wys/toolbar_template.html',function(d){
     wysToolbar.html(d);
     initWysToolbar();
@@ -276,4 +289,4 @@ $(function(){
     initWysQuickEdit();
     initWysTour();
   });
-});
+};

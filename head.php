@@ -43,4 +43,19 @@ if(!isset($wys["edit_path"])) $wys["edit_path"] = "";
 <script src="/<?php print $wys['cms_folder'] ?>wys/editor.js"></script>
 <script src="/<?php print $wys['cms_folder'] ?>wys/tour.js"></script>
 
+<!-- i18next -->
+<script type="text/javascript" src="/<?php print $wys['cms_folder'] ?>wys/vendor/i18next/i18next.min.js"></script>
+<script type="text/javascript" src="/<?php print $wys['cms_folder'] ?>wys/vendor/i18next/i18nextXHRBackend.min.js"></script>
+<script>
+$(document).ready(function(){
+  lang = 'en';
+  i18next.use(i18nextXHRBackend)
+  .init({
+    lng: lang, debug: false, fallbackLng: 'en',
+    backend: { loadPath: '/<?php print $wys['cms_folder'] ?>wys/i18n/{{lng}}.json' }
+  }, function() {
+    wysMainSetup();
+  });
+});
+</script>
 <?php endif ?>

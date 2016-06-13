@@ -1,0 +1,46 @@
+{
+  "tooltips": {
+    "dashboard": "Ohjauspaneeli",
+    "editor": "Avaa muokkausnäkymä",
+    "quick-editor": "Siirry pikamuokkaustilaan",
+    "logout": "Kirjaudu ulos",
+    "tour": "Ohjeistus",
+    "save-changes": "Tallenna muutokset"
+  },
+  "tour": {
+    "previous":"Edellinen",
+    "next":"Seuraava",
+    "close":"Sulje ohjeistus",
+
+    "first-step-title":"Editorin opastus",
+    "first-step-content":"Tervetuloa sivueditoriin! Tämä lyhyt ohjeistus näyttää miten pääset käsiksi editorin keskeisimpiin toimintoihin.",
+
+    "open-toolbar-title": "Työkalupalkin avaaminen",
+    "open-toolbar-content": "Saat editorin toimintonapit näkyville viemällä hiiren tämän oikeassa yläkulmassa näkyvän kolmion päälle.",
+
+    "cms-dashboard-title": "Sisältöeditori",
+    "cms-dashboard-content": "Tästä napista avaat sisältöeditorin päänäkymän, jonka kautta pääset käsiksi kaikkiin sen toimintoihin.",
+
+    "cms-editor-title": "Avaa muokkausnäkymä",
+    "cms-editor-content": "Tästä napista avaat <strong>aktiivisen sivun</strong> muokkausnäkymän.",
+
+    "quick-editor-title": "Pikamuokkaustila",
+    "quick-editor-content": "Tätä nappia klikkaamalla siirryt pikamuokkaustilaan.",
+
+    "quick-editor-explanation-title": "Pikamuokkaustilan alueet",
+    "quick-editor-explanation-content": "Pikamuokkaustilassa voit muokata suoraan kaikkea näkyvää sisältöä joka on ympyröity katkoviivoin.",
+
+    "quick-editor-usage-title": "Pikamuokkaustilan muotoilut",
+    "quick-editor-usage-content": "Voit muotoilla sisältöä pikamuokkaus&shy;tilassa maalaamalla muokattavan tekstin, ja valitsemalla tekstin päälle ilmestyvästä työkalu&shy;valikosta sopivan muotoilu&shy;työkalun.",
+    "quick-editor-usage-highlight": "maalaa minut",
+
+    "shortcuts-title": "Pikalinkit",
+    "shortcuts-content": "Tämän alavalikon kautta pääset nopeasti käsiksi editoidessa usein käytettyihin toimintoihin.",
+
+    "logout-title": "Kirjaudu ulos",
+    "logout-content": "Kirjaudu ulos editorista klikkaamalla tästä.",
+
+    "tour-restart-title": "Ohjeistus uudelleen",
+    "tour-restart-content": "Tästä napista voit avata tämän ohjeistuksen uudelleen."
+  }
+}

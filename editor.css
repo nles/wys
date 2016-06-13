@@ -9,6 +9,14 @@
   z-index: 99999980;
 }
 
+.editor-actions-wrapper {
+  width: 38px; float: right;
+  background: #fff;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+}
+
 #wys-editor-trigger {
   float: right;
   position: absolute;
@@ -27,13 +35,8 @@
   position: absolute;
   top: 0; right: 0;
   width: 0;
-  background: #fff;
   overflow: hidden;
   z-index: 99999981;
-
-  border-color: #ddd;
-  border-style: solid;
-  border-width: 0px 0px 1px 1px;
 }
 
 #wys-editor-toolbar .editor-actions {
@@ -89,6 +92,8 @@
 }
 
 .popover.tour { max-width: 450px; }
+.popover.tour h3,
+.popover.tour div { font-family: sans-serif; }
 
 
 .loader-wrapper .loading {
