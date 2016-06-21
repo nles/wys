@@ -1,11 +1,11 @@
 <!-- goes inside <head> -->
-<? if($GLOBALS['logged_in']): ?>
+<?php if($GLOBALS['logged_in']): ?>
 
 <?php
 // init with defaults if we dont have any settings
-if(!isset($wys)) $wys = [];
-if(!isset($wys["cms_folder"])) $wys["cms_folder"] = "cockpit/";
-if(!isset($wys["edit_path"])) $wys["edit_path"] = "";
+if(!isset($wys)){ $wys = []; }
+if(!isset($wys["cms_folder"])){ $wys["cms_folder"] = "cockpit/"; }
+if(!isset($wys["edit_path"])){ $wys["edit_path"] = ""; }
 ?>
 
 <script>
@@ -58,4 +58,4 @@ $(document).ready(function(){
   });
 });
 </script>
-<?php endif ?>
+<?php endif; ?>
