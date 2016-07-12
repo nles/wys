@@ -12,7 +12,7 @@ if(!isset($wys["edit_path"])){ $wys["edit_path"] = ""; }
   // This path should point to the currently active page to provide quick
   // editor access through the wys-toolbar.
   var wys_cms_path = "/<?php print $wys['cms_folder'] ?>";
-  var cms_active_edit_path = "/<?php print $wys['cms_folder'] ?>index.php/collections/entry/<?php print $wys['edit_path']; ?>";
+  var cms_active_edit_path = "/<?php print $wys['cms_folder'] ?>collections/entry/<?php print $wys['edit_path']; ?>";
 </script>
 
 <!-- jquery -->
