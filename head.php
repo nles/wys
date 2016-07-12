@@ -4,6 +4,7 @@
 <?php
 // init with defaults if we dont have any settings
 if(!isset($wys)){ $wys = []; }
+if(!isset($wys["language"])){ $wys["language"] = "en"; }
 if(!isset($wys["cms_folder"])){ $wys["cms_folder"] = "cockpit/"; }
 if(!isset($wys["edit_path"])){ $wys["edit_path"] = ""; }
 ?>
@@ -48,7 +49,7 @@ if(!isset($wys["edit_path"])){ $wys["edit_path"] = ""; }
 <script type="text/javascript" src="/<?php print $wys['cms_folder'] ?>wys/vendor/i18next/i18nextXHRBackend.min.js"></script>
 <script>
 $(document).ready(function(){
-  lang = 'en';
+  lang = '<?php print $wys['language'] ?>';
   i18next.use(i18nextXHRBackend)
   .init({
     lng: lang, debug: false, fallbackLng: 'en',

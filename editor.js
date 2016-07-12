@@ -82,8 +82,8 @@ var initWysToolbar = function(){
 // SHORTCUTS
 var initWysShortcuts = function(){
   var has_shortcuts = false;
-  $.get("/meta/editor_shortcuts.json",function(shortcut_data){
-    var shortcuts = $.parseJSON(shortcut_data)
+  $.get("/meta/editor_shortcuts.json",{ "_": $.now() },function(shortcut_data){
+    var shortcuts = (typeof shortcut_data == "string") ? $.parseJSON(shortcut_data) : shortcut_data;
     for(var key in shortcuts){
       if (!shortcuts.hasOwnProperty(key)) continue;
       var shortcut = shortcuts[key];
