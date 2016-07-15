@@ -1,11 +1,15 @@
 {
+  "messages": {
+    "confirm-quick-edit-exit": "Haluatko varmasti poistua pikamuokkaustilasta? Kaikki tallentamattomat muutokset menetetään."
+  },
   "tooltips": {
     "dashboard": "Ohjauspaneeli",
     "editor": "Avaa muokkausnäkymä",
     "quick-editor": "Siirry pikamuokkaustilaan",
     "logout": "Kirjaudu ulos",
     "tour": "Ohjeistus",
-    "save-changes": "Tallenna muutokset"
+    "save-changes": "Tallenna muutokset",
+    "exit-quick-edit": "Poistu pikamuokkaustilasta"
   },
   "tour": {
     "previous":"Edellinen",

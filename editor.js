@@ -60,6 +60,7 @@ var initWysToolbar = function(){
   wysToolbar.find("#wys-cms-logout").attr('data-hint',i18next.t('tooltips.logout'));
   wysToolbar.find("#wys-cms-tour").attr('data-hint',i18next.t('tooltips.tour'));
   wysToolbar.find("#wys-save-quick-mode-changes").attr('data-hint',i18next.t('tooltips.save-changes'));
+  wysToolbar.find("#wys-exit-quick-edit-mode").attr('data-hint',i18next.t('tooltips.exit-quick-edit'));
 
   // events
   wysTrigger.on('mousemove',function(){ hoveringWysTrigger = true; });
@@ -143,6 +144,11 @@ var initWysQuickEdit = function(){
     });
     wysToolbar.find('#wys-save-quick-mode-changes').click(function(){
       wysQuickEditSave();
+    });
+    wysToolbar.find('#wys-exit-quick-edit-mode').click(function(){
+      if(confirm(i18next.t('messages.confirm-quick-edit-exit'))){
+         window.location.reload();
+      }
     });
   } else {
     //wysToolbar.find('#wys-enable-quick-edit-mode').hide();
@@ -263,6 +269,7 @@ $(window).bind('keydown', function(event) {
       case 'e':
         if(wysQuickEditModeAvailable) {
           preventDef(event);
+          openWysToolbar();
           enableWysQuickEditMode()
       }
       break;

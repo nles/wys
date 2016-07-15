@@ -1,11 +1,15 @@
 {
+  "messages": {
+    "confirm-quick-edit-exit": "Are you sure you want to exit quick edit mode? Unsaved changes will be lost."
+  },
   "tooltips": {
     "dashboard": "Dashboard",
     "editor": "Open editor",
     "quick-editor": "Quick edit mode",
     "logout": "Log out",
     "tour": "Tour",
-    "save-changes": "Save changes"
+    "save-changes": "Save changes",
+    "exit-quick-edit": "Exit quick edit mode"
   },
   "tour": {
     "previous":"Previous",
