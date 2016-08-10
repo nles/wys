@@ -271,7 +271,10 @@ $(window).bind('keydown', function(event) {
           preventDef(event);
           openWysToolbar();
           enableWysQuickEditMode()
-      }
+        }
+      case 'u':
+          preventDef(event);
+          $('#wys-open-editor').trigger('click');
       break;
     }
   }

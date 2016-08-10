@@ -17,7 +17,9 @@ if(!isset($wys["edit_path"])){ $wys["edit_path"] = ""; }
 </script>
 
 <!-- jquery -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">\x3C/script>');
+</script>
 
 <!-- hint.css -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/hint.css/2.2.1/hint.min.css">
