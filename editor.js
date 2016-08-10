@@ -160,6 +160,9 @@ var enableWysQuickEditMode = function(){
   wysQuickEditModeOn = true;
   if(!wysMediumEditor){
     wysMediumEditor = new MediumEditor('.editable', {
+      toolbar: {
+        buttons: ['bold', 'italic', 'underline', 'anchor', 'h1', 'h2', 'h3'],
+      },
       paste: {
         forcePlainText: true
       },
