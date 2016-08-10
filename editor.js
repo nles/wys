@@ -266,12 +266,14 @@ $(window).bind('keydown', function(event) {
           preventDef(event);
           wysQuickEditSave();
         }
+      break;
       case 'e':
         if(wysQuickEditModeAvailable) {
           preventDef(event);
           openWysToolbar();
           enableWysQuickEditMode()
         }
+      break;
       case 'u':
           preventDef(event);
           $('#wys-open-editor').trigger('click');
