@@ -70,6 +70,9 @@ var initWysToolbar = function(){
   wysCmsShortcuts.on('mousemove',function(){ hoveringWysShortcuts = true; });
   wysCmsShortcuts.on('mouseout',function(){ hoveringWysShortcuts = false; });
 
+  // logout link path
+  wysToolbar.find("#wys-cms-logout").attr('href',wys_cms_path+'index.php/auth/logout');
+
   setInterval(function(){
     if((hoveringWysToolbar || hoveringWysTrigger) && !wysToolbarOpen){ openWysToolbar(); }
     if(!hoveringWysToolbar && !hoveringWysTrigger && wysToolbarOpen){
